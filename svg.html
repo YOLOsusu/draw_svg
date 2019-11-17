@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        html,
+        body{
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        .bo{
+            width: 90%;
+            height: 90%;
+            margin: 5%;
+            display: flex;
+            border: 1px solid #3385f3;
+        }
+        li {
+            list-style: none;
+            line-height: 30px;
+            border: 1px solid #333333;
+            text-align: center;
+            font-size: 14px;
+            margin: 20px;
+            border-radius: 5px;
+            width: 100px;
+        }
+        .svg{
+            width: 80%;
+            min-height: 100%;
+            border: 1px solid #333333;
+        }
+        .box{
+          display: none;
+          position: fixed;
+          line-height: 40px;
+          padding: 0 20px;
+          border: 1px solid #3385f3;
+          border-radius: 5px;
+        }
+        div,svg,circle,g,li,rect {
+      -moz-user-select:none;
+      -webkit-user-select:none;
+      user-select:none;    
+     }
+    </style>
+</head>
+
+<body>
+    <div class="bo">
+        <ul styl="width:20%">
+            <li>方形</li>
+            <li>圆形</li>
+            <li>曲线</li>
+            <li>文字</li>
+            <li>路径</li>
+            <li>图片</li>
+        </ul>
+        <div class="box" id="box"></div>
+        <svg width="80%" height="100%" class="svg"  id="hb" version="1.1"
+        xmlns="http://www.w3.org/2000/svg">
+         <!-- <g>
+          <circle cx="" cy ="" r="" stroke="back" stroke-width="1" fill="#fff"></circle>
+          <rect x="" y ="" width = "" height="" stroke="back" stroke-width="1" fill="#fff"></rect> 
+          <circle cx="" cy ="" r="" stroke="back" stroke-width="1" fill="#fff"></circle>
+          <g style="">
+            <rect x="" y ="" width = "" height="" fill="#14384d"></rect>
+            <text x="" y="" alignment-baseline="middle" text-anchor="middle" fill = "#fff">TEXT</text>
+            <text x="" y="" alignment-baseline="middle" text-anchor="middle" fill = "#fff">TEXT</text>   
+          </g>
+        </g> -->
+        </svg>
+
+        <!-- <svg width="200" height="100">
+                <rect x="0" y="0" width="200" height="100" stroke="red" stroke-width="3px" fill="white"/>
+                <text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle">TEXT</text>    
+              </svg> -->
+    </div>
+
+</body>
+<script src="js/moudle.js"></script>
+<script src="js/svg.js"></script>
+</html>
